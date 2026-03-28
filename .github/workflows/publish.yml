@@ -19,9 +19,9 @@ jobs:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
 
-      # Clean install of your dependencies
+      # Standard install bypasses the need for a package-lock.json file
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
 
       # Run tests to ensure you don't publish broken code
       - name: Run Tests
