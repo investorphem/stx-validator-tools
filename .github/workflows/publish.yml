@@ -1,0 +1,38 @@
+name: Publish to NPM
+
+# This triggers the action whenever you publish a new Release on GitHub
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      # Clean install of your dependencies
+      - name: Install Dependencies
+        run: npm ci
+
+      # Run tests to ensure you don't publish broken code
+      - name: Run Tests
+        run: npm run test
+
+      # Compile the TypeScript code
+      - name: Build Project
+        run: npm run build
+
+      # Publish to NPM using the secret token
+      - name: Publish Package
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
