@@ -1,5 +1,5 @@
 {
-  "name": "@yourusername/stx-validator-tools",
+  "name": "@investorphem/stx-validator-tools",
   "version": "1.0.0",
   "description": "A lightweight utility for validating Stacks (STX) addresses and transaction IDs with TypeScript support.",
   "main": "./dist/index.js",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/stx-validator-tools.git"
+    "url": "git+https://github.com/investorphem/stx-validator-tools.git"
   },
   "dependencies": {
     "c32check": "^1.1.3"
