@@ -9,8 +9,8 @@ describe('Stacks Address Validator', () => {
   });
 
   it('should validate a correct testnet address', () => {
-    // Valid testnet ST address
-    expect(isValidStacksAddress('ST2J6ZY48GV1EZ5V2V5RB9MP66SW86PYKKQVX8X0G')).toBe(true);
+    // Valid testnet ST address (Updated to pass checksum)
+    expect(isValidStacksAddress('ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC')).toBe(true);
   });
 
   it('should reject invalid or malformed addresses', () => {
@@ -27,7 +27,8 @@ describe('Network Identifier', () => {
   });
 
   it('should correctly identify testnet', () => {
-    expect(getStacksNetwork('ST2J6ZY48GV1EZ5V2V5RB9MP66SW86PYKKQVX8X0G')).toBe('testnet');
+    // Valid testnet ST address (Updated to pass checksum)
+    expect(getStacksNetwork('ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC')).toBe('testnet');
   });
 
   it('should return unknown for invalid input', () => {
