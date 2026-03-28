@@ -10,13 +10,15 @@ A lightweight, zero-bloat TypeScript library for validating Stacks (STX) blockch
 
 ## Installation
 ```bash
-npm install @yourusername/stx-validator-tools
+npm install @investorphem/stx-validator-tools
+```
 
 ## Usage
+```typescript
 import { isValidStacksAddress, getStacksNetwork } from '@investorphem/stx-validator-tools';
 
 const addr = "SP3FG...Z8B";
 if (isValidStacksAddress(addr)) {
   console.log(getStacksNetwork(addr)); // "mainnet"
 }
-
+```
