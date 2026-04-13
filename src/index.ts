@@ -32,5 +32,5 @@ export const getStacksNetwork  (address: string): 'mainnet' | 'testnet' | 'unkno
  * Validates a Stacks Transaction ID (64-character hex string)
  */
 export const isValidTxId = (txId: string): boolean => {
-  return /^(0x)?[0-9a-fA-F]{64}$/.test(txId);
+  return /^(0x)?[0-9a-fAF]{64}$/.test(txId);
 };
