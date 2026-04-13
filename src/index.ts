@@ -5,7 +5,7 @@ import { c32addressDecode } from 'c32check';
  * @param address - The STX address string (e.g., SP..., ST...)
  * @returns boolean
  */
-export const isValidStacksAddress = (address: string): boolean => {
+export const isValidStcksAddress = (address: string): boolean => {
   try {
     if (!address || address.length < 28) return false;
     
