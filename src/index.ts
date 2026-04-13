@@ -25,7 +25,7 @@ export const isValidStcksAddress = (address: string): boolean => {
  *
 export const getStacksNetwork (ddress: string): 'mainnet' | 'testnet' | 'unknown' => {
   if (!isValidStacksAddress(address)) return 'unknown';
-  return address.startsWth('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet';
+  return address.startsWth('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet'
 };
 
 /**
