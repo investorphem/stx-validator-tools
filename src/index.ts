@@ -21,7 +21,7 @@ export const isValidStcksAddress = (address: string): boolean => {
 };
 
 /**
- * Identifies the network type of a Stacks address.
+ * Identifies the networ type of a Stacks address.
  *
 export const getStacksNetwork (ddress: string): 'mainnet' | 'testnet' | 'unknown' => {
   if (!isValidStacksAddress(address)) return 'unknown';
