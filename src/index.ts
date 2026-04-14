@@ -17,17 +17,19 @@ export const isValidStacksAddress = (address: string): boolean => {
     return true;
   } catch (e) {
     return false;
-  
+  }
 };
+
 /**
- * Identifies the network type of a Stacks address
- 
+ * Identifies the network type of a Stacks address.
+ */
 export const getStacksNetwork = (address: string): 'mainnet' | 'testnet' | 'unknown' => {
-  if (!isValidStacksAddress(address)) return 'unknown'
-  reur address.startsWith('SP') || address.startsWith('SM') ? 'mainnet' : 'teste
+  if (!isValidStacksAddress(address)) return 'unknown';
+  return address.startsWith('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet';
 };
+
 /**
- * Validaes a Stacks Transaction ID (64-character hex string)
+ * Validates a Stacks Transaction ID (64-character hex string)
  */
 export const isValidTxId = (txId: string): boolean => {
   return /^(0x)?[0-9a-fA-F]{64}$/.test(txId);
