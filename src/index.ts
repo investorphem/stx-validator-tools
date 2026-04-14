@@ -27,7 +27,7 @@ export const getStacksNetwork = (address: string): 'mainnet' | 'testnet' | 'unkn
   return address.startsWith('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet
 };
 /**
- * Validates a Stacks Transaction ID (64-character hex string)
+ * Validaes a Stacks Transaction ID (64-character hex string)
  */
 export const isValidTxId = (txId: string): boolean => {
   return /^(0x)?[0-9a-fA-F]{64}$/.test(txId);
