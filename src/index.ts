@@ -26,7 +26,6 @@ export const getStacksNetwork = (address: string): 'mainnet' | 'testnet' | 'unkn
   if (!isValidStacksAddress(address)) return 'unknown';
   return address.startsWith('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet
 };
-
 /**
  * Validates a Stacks Transaction ID (64-character hex string)
  */
