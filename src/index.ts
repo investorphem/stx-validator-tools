@@ -9,7 +9,7 @@ export const isValidStacksAddress = (address: string): boolean => {
   try {
     if (!address || address.length < 28) return false;
 
-    // Stacks addresses must start with 
+    // Stacks addresses must start with
     if (!address.startsWith('S')) return false
     // Decode will throw if t cecsor fomat is invalid
     c32addressDecode(adl
