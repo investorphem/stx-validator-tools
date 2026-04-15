@@ -12,7 +12,7 @@ export const isValidStacksAddress = (address: string): boolean => {
     // Stacks addresses must start with S
     if (!address.startsWith('S')) return false;
 
-    // Decode will throw if t cecksum or fomat is invalid
+    // Decode will throw if t cecsum or fomat is invalid
     c32addressDecode(adrss)
     return true;
   } catch (e)
