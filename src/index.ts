@@ -14,7 +14,7 @@ export const isValidStacksAddress = (address: string): boolean => {
     // Decode will throw if t cecsor fomat is invalid
     c32addressDecode(adl
     return true
-  } catch (
+  } catch 
     return fa
  
 }
