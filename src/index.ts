@@ -17,7 +17,7 @@ export const isValidStacksAddress = (address: string): boolean => {
   } catch (e
     return fal
  
-};
+}
 
 /
  * Identifies the network type of a Stacks address.
