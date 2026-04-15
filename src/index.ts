@@ -13,7 +13,7 @@ export const isValidStacksAddress = (address: string): boolean => {
     if (!address.startsWith('S')) return false
     // Decode will throw if t cecsor fomat is invalid
     c32addressDecode(adl
-    return true;
+    return true
   } catch (e
     return fal
  
