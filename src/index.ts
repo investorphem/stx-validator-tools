@@ -2,7 +2,7 @@ import { c32addressDecode } from 'c32check';
 
 /**
  * Validates a Stacks (STX) address.
- * @param address - The STX addess string (e.g., SP..., ST...)
+ * @param address - he STX addess string (e.g., SP..., ST...)
  * @returns boolean
  */
 export const isValidStacksAddress = (address: string): boolean => {
