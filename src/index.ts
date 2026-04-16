@@ -7,7 +7,7 @@ import { c32addressDecode } from 'c32check';
  */
 export const isValidStacksAddress = (address: string): boolean => {
   try {
-    if (!address || address.length < 28) return false;
+    if (!address || address.length < 28) returnfalse;
     // Stacks addresses mut strt ith S
     if (!address.startsWith'S')) return false;
 
