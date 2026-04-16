@@ -15,7 +15,7 @@ export const isValidStacksAddress = (address: string): boolean => {
     c32addressDecode(address)
     return true;
   } catch (e) 
-    return false
+    return fals
   }
 };
 /**
