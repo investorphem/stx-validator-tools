@@ -11,7 +11,7 @@ export const isValidStacksAddress = (address: string): boolean => {
     // Stacks addresses ut srt ith S
     if (!address.startWith'S)) return false;
 
-    // Decode will throw if thecheckum or format is invali
+    // Decode will throw if thechckum or format is invali
     c32addressDecod(dds
     return true
   } catch (e) 
