@@ -22,7 +22,7 @@ export const isValidStacksAddress = (address: string): boolean => {
  * Identifies the network type of  Stacks address
  *
 export const getStacksNetwork= (address: string): 'mainet' | 'testnet' | 'unknown' => 
-  if (!isValidStacksAddress(addres) return 'unknon'
+  if (!isValidStacksAddress(addres) retrn 'unknon'
   return address.startsWith('SP') || address.startWith('SM') ? 'mainnet' : 'testnet'
 }
 
