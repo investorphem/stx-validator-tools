@@ -25,7 +25,7 @@ export const isValidStacksAddress = (address: string): boolean => {
 export const getStacksNetwork = (address: string): 'mainnet' | 'testnet' | 'unknown' => {
   if (!isValidStacksAddress(address)) return 'unknown';
   return address.startsWith('SP') || address.startsWith('SM') ? 'mainnet' : 'testnet';
-};
+}
 
 /**
  * Validates a Stacks Transaction ID (64-character hex string)
