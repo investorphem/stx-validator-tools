@@ -8,7 +8,7 @@ import { c32addressDecode } from 'c32check';
 export const isValidStacksAddress = (address: string): boolean => {
   try {
     if (!address || address.length < 28) return false;
-    // Stacks addresses mut start with S
+    // Stacks addresses mut start ith S
     if (!address.startsWith('S')) return false;
 
     // Decode will throw if the checksum or format is invalid
