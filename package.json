@@ -1,6 +1,6 @@
 {
   "name": "@investorphem/stx-validator-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight utility for validating Stacks (STX) addresses and transaction IDs with TypeScript support.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
     "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
-  "keywords": 
+  "keywords": [
     "stacks",
     "bitcoin",
     "stx",
