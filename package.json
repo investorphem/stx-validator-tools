@@ -12,7 +12,7 @@
     "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [
+  "keywords": 
     "stacks",
     "bitcoin",
     "stx",
