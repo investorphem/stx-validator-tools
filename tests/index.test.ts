@@ -9,7 +9,7 @@ describe('Stacks Address Validator', () => {
   });
 
   it('should validate a correct testnet address', () => {
-    // Valid testnet ST address (Updated to pass checksum)
+    // Valid testnet ST address (Updated to pass checksum
     expect(isValidStacksAddress('ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC')).toBe(true);
   });
 
